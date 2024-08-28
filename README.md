@@ -70,8 +70,25 @@ pip install -r ./app/requirements.txt
  
 Este comando puede demorar un rato dependiendo de la velocidad del computador y la de la conexión a Internet.
 
+### 3. Actualización de la url para la carga del modelo
 
-### 3. [SERVIDOR] Despliegue en Modal
+Para garantizar que el modelo se cargue correctamente en el entorno de despliegue, es necesario actualizar la ruta local del archivo del modelo en el script main.py. La ruta actual `'/RutaLocal/producto-datos-lab/app/model/random_forest.joblib'` debe ser modificada para reflejar la ubicación correspondiente en tu sistema local.
+
+En el archivo main.py, encontrarás una línea de código que define la URL del endpoint:
+
+```python
+image = modal.Image.debian_slim(python_version="3.8").pip_install(
+        "fastapi",
+        "pydantic",
+        "joblib",
+        "scikit-learn==1.3.2",
+        "numpy",
+        "uvicorn",       # Añadir uvicorn
+        "nest_asyncio",  # Añadir nest_asyncio
+    ).copy_local_file('/RutaLocal/producto-datos-lab/app/model/random_forest.joblib', model_path)
+```
+
+### 4. [SERVIDOR] Despliegue en Modal
 
 Comenzando
 Lo más agradable de todo esto es que no tienes que configurar ninguna infraestructura. Simplemente:
@@ -96,7 +113,7 @@ Y podrás comenzar a ejecutar trabajos de inmediato.
 ```
 modal deploy ./app/backend/main.py
 ```
-### 4. Actualización de la url del endpoint
+### 5. Actualización de la url del endpoint
 
 Después de desplegar la aplicación en FastAPI en Modal, recibirás una URL única para tu aplicación. Esta URL es el endpoint al que la aplicación de Streamlit enviará las solicitudes.
 
