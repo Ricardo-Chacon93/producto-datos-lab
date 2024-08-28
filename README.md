@@ -96,6 +96,7 @@ Y podrás comenzar a ejecutar trabajos de inmediato.
 ```
 modal deploy ./app/backend/main.py
 ```
+### 4. Actualización de la url del endpoint
 
 Después de desplegar la aplicación en FastAPI en Modal, recibirás una URL única para tu aplicación. Esta URL es el endpoint al que la aplicación de Streamlit enviará las solicitudes.
 
