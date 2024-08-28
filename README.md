@@ -62,13 +62,13 @@ Todo el trabajo que realicemos con este código será en este entorno. Así que 
  
 ### 2. Instalando las dependencias usando PIP 
  
-Antes de seguir, verifica que en el terminal de Anaconda estés dentro del directorio `producto-datos-lab`, el cual incluye el archivo `requirements.txt`. Este archivo enlista todas las dependencias necesarias y podemos usarlo para instalarlas todas:
+Antes de seguir, verifica que en el terminal de Anaconda estés dentro del directorio `producto-datos-lab`, el cual incluye el archivo `./app/requirements.txt`. Este archivo enlista todas las dependencias necesarias y podemos usarlo para instalarlas todas:
  
 ```bash
 pip install -r ./app/requirements.txt
 ```
  
-Este comando puede demorar un rato dependiendo de la velocidad del computador y la de la conexión a Internet. Una vez que termine ya está listo todo para comenzar una sesión de Jupyter Lab o Notebook.
+Este comando puede demorar un rato dependiendo de la velocidad del computador y la de la conexión a Internet.
 
 ## Instalación
 
