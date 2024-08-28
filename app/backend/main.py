@@ -21,7 +21,7 @@ image = modal.Image.debian_slim(python_version="3.8").pip_install(
         "numpy",
         "uvicorn",       # Añadir uvicorn
         "nest_asyncio",  # Añadir nest_asyncio
-    ).copy_local_file('/Users/admicontabilidad3/Desktop/Documentos Laborales/DCS/trabajo_final/producto-datos-lab/app/model/random_forest.joblib', model_path)
+    ).copy_local_file('/RutaLocal/producto-datos-lab/app/model/random_forest.joblib', model_path)
 
 # Creamos una clase para el vector de features de entrada
 class Item(BaseModel):
