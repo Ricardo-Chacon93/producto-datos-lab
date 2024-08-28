@@ -1,15 +1,16 @@
-# Import the required libraries
+# Importar las bibliotecas necesarias
 import streamlit as st
 import json
 import requests
 
-# Define the endpoint of the FastAPI application
+# Definir el endpoint de la aplicación FastAPI
 endpoint = "https://ricardo-chacon93--prediccion-propinas-app-fastapi-app.modal.run/predict"
 
-# Set the title of the Streamlit application
+# Establecer el título de la aplicación Streamlit
+
 st.title("🚕💰 Predicción de Propinas en Viajes en Taxi")
 
-# Create input fields for the user to input the features of the taxi trip
+# Crear campos de entrada para que el usuario ingrese las características del viaje en taxi
 st.write("Por favor, ingresa las siguientes características de tu viaje en taxi:")
 
 # Agrupación de la información general del viaje
@@ -48,7 +49,7 @@ input_data = {
     "DOLocationID": DOLocationID,
     "RatecodeID": RatecodeID
 }
-print(input_data)
+
 # Si se hace clic en el botón "Predecir", enviar una solicitud a la aplicación FastAPI y mostrar la respuesta
 if st.button("Predecir"):
     with st.spinner("Realizando predicción..."):
