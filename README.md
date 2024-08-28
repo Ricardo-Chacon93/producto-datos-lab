@@ -58,7 +58,7 @@ Luego debemos activarlo usando el comando:
 conda activate producto-datos-lab
 ```
  
-Todo el trabajo que realicemos con este código será en este entorno. Así que al trabajarcon estos archivos siempre tiene que estar activo el `producto-datos-lab`.
+Todo el trabajo que realicemos con este código será en este entorno. Así que al trabajar con estos archivos siempre tiene que estar activo el `producto-datos-lab`.
  
 ### 2. Instalando las dependencias usando PIP 
  
@@ -70,10 +70,8 @@ pip install -r ./app/requirements.txt
  
 Este comando puede demorar un rato dependiendo de la velocidad del computador y la de la conexión a Internet.
 
-## Instalación
 
-
-## [SERVIDOR] Despliegue en Modal
+### 3. [SERVIDOR] Despliegue en Modal
 
 Comenzando
 Lo más agradable de todo esto es que no tienes que configurar ninguna infraestructura. Simplemente:
