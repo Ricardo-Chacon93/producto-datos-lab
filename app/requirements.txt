@@ -14,3 +14,4 @@ scipy
 modal
 streamlit
 modal-client
+python-dotenv
