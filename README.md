@@ -11,7 +11,7 @@ Este proyecto consiste en la implementación de un sistema de predicción utiliz
 - Preparar el backend para su despliegue en un entorno serverless utilizando Modal.
 
 ### 2. Interfaz de Usuario en Streamlit:
-- Crear una interfaz gráfica de usuario (GUI) utilizando Streamlit.
+- Crear una interfaz gráfica de usuario utilizando Streamlit.
 - La interfaz permitirá a los usuarios interactuar fácilmente con la aplicación, enviando datos al backend para obtener predicciones.
 
 ### 3. Despliegue Serverless:
