@@ -107,9 +107,6 @@ endpoint = "https://ricardo-chacon93--prediccion-propinas-app-fastapi-app.modal.
 ```
 Debes reemplazar esta URL con la URL que recibiste después de tu despliegue en Modal. Esto asegura que la aplicación de Streamlit se comunique correctamente con tu aplicación FastAPI desplegada.
 
-```bash
-modal token new
-```
 Finalmente inicia la aplicación Streamlit desde el archivo apply.py
 
 ```bash
