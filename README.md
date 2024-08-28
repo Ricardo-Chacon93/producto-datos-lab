@@ -74,7 +74,7 @@ Este comando puede demorar un rato dependiendo de la velocidad del computador y 
 
 Para garantizar que el modelo se cargue correctamente en el entorno de despliegue, es necesario actualizar la ruta local del archivo del modelo en el script main.py. La ruta actual `'/RutaLocal/producto-datos-lab/app/model/random_forest.joblib'` debe ser modificada para reflejar la ubicación correspondiente en tu sistema local.
 
-En el archivo main.py, encontrarás una línea de código que define la URL del endpoint:
+En el archivo main.py, encontrarás una línea de código que define la URL del modelo:
 
 ```python
 image = modal.Image.debian_slim(python_version="3.8").pip_install(
