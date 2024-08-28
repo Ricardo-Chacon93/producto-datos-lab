@@ -92,11 +92,11 @@ modal token new
 ```
 
 
-...y podrás comenzar a ejecutar trabajos de inmediato.
+Y podrás comenzar a ejecutar trabajos de inmediato.
 
 
 ```
-modal deploy .\backend\main.py
+modal deploy ./app/backend/main.py
 ```
 
 Después de desplegar la aplicación en FastAPI en Modal, recibirás una URL única para tu aplicación. Esta URL es el endpoint al que la aplicación de Streamlit enviará las solicitudes.
@@ -116,3 +116,4 @@ Finalmente inicia la aplicación Streamlit desde el archivo apply.py
 ```bash
 streamlit run ./app/apply.py
 ```
+El proceso ha concluido. Ahora puedes validar la aplicación en la ventana que se abrirá. La documentación adicional está disponible para que explores el modelo de entrenamiento. En caso de ser necesario, puedes realizar pruebas, reentrenar el modelo y desplegarlo nuevamente.
